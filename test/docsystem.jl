@@ -65,12 +65,12 @@ const alias_of_getdocs = DocSystem.getdocs # NOTE: won't get docstrings if in a 
         @test d_1[1].data[:binding] == b
         @test d_1[2].data[:binding] == b
         @test d_1[1].data[:typesig] == Union{Tuple{Docs.Binding}, Tuple{Docs.Binding, Type}}
-        @test d_1[2].data[:typesig] == Union{Tuple{ANY}, Tuple{ANY, Type}}
+        @test d_1[2].data[:typesig] == Union{Tuple{Any}, Tuple{Any, Type}}
         @test d_1[1].data[:module]  == DocSystem
         @test d_1[2].data[:module]  == DocSystem
 
         @test d_2[1].data[:binding] == b
-        @test d_2[1].data[:typesig] == Union{Tuple{ANY}, Tuple{ANY, Type}}
+        @test d_2[1].data[:typesig] == Union{Tuple{Any}, Tuple{Any, Type}}
         @test d_2[1].data[:module]  == DocSystem
 
         @test d_1 == d_4
