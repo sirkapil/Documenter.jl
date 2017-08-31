@@ -46,7 +46,7 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/JuliaDocs/Documenter.jl.git",
+    repo = "github.com/sirkapil/Documenter.jl.git",
     target = "build",
     deps = nothing,
     make = nothing,
